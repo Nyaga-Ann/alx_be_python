@@ -6,9 +6,9 @@ def get_number(prompt):
         except ValueError:
             print("Please enter a valid number.")
 
-num1 = get_number("Enter the first number: ")
-num2 = get_number("Enter the second number: ")
-operation = input("Choose the operation (+, -, *, /): ")
+num1 = get_number("Enter the first number:\n")
+num2 = get_number("Enter the second number:\n")
+operation = input("Choose the operation (+, -, *, /):\n")
 
 match operation:
     case "+":

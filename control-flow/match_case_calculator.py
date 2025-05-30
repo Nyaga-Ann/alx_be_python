@@ -1,15 +1,11 @@
+# match_case_calculator.py
 
-def get_number(prompt):
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Please enter a valid number.")
+# Step 1: Prompt user for inputs using exact prompts
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Choose the operation (+, -, *, /): ")
 
-num1 = get_number("Enter the first number:\n")
-num2 = get_number("Enter the second number:\n")
-operation = input("Choose the operation (+, -, *, /):\n")
-
+# Step 2: Match Case for operations
 match operation:
     case "+":
         result = num1 + num2
@@ -28,3 +24,4 @@ match operation:
             print(f"The result is {result}.")
     case _:
         print("Invalid operation selected.")
+
